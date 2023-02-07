@@ -58,42 +58,51 @@ public class Main {
     private static void orderPeopleByDNI91(ArrayList<Person> people) {
         List<Person> orderedList = people.stream().sorted(new CustomComparatorByDNI()).collect(Collectors.toList());
         Collections.reverse(orderedList);
-        for (Person p:orderedList) {System.out.println("Name: " + p.getName() +" Last Name: "+ p.getLastName() +" DNI: "+ p.getDni());}
+        System.out.println("__Name______Last_Name________DNI__");
+        for (Person p:orderedList) {
+            System.out.println(p.getName() +"    "+p.getLastName()+"    "+p.getDni());
+        }
     }
 
     private static void orderPeopleByDNI19(ArrayList<Person> people) {
         List<Person> orderedList = people.stream().sorted(new CustomComparatorByDNI()).collect(Collectors.toList());
-
-        for (Person p:orderedList) {System.out.println("Name: " + p.getName() +" Last Name: "+ p.getLastName() +" DNI: "+ p.getDni());}
+        System.out.println("__Name______Last_Name________DNI__");
+        for (Person p:orderedList) {
+            System.out.println(p.getName() +"    "+p.getLastName()+"    "+p.getDni());
+        }
     }
 
     private static void orderPeopleByLastNameZA(ArrayList<Person> people) {
         List<Person> orderedList = people.stream().sorted(new CustomComparatorByLastName()).collect(Collectors.toList());
         Collections.reverse(orderedList);
+        System.out.println("__Name______Last_Name________DNI__");
         for (Person p:orderedList) {
-            System.out.println("Name: " + p.getName() +" Last Name: "+ p.getLastName() +" DNI: "+ p.getDni());
+            System.out.println(p.getName() +"    "+p.getLastName()+"    "+p.getDni());
         }
     }
 
     private static void orderPeopleByLastNameAZ(ArrayList<Person> people) {
         List<Person> orderedList = people.stream().sorted(new CustomComparatorByLastName()).collect(Collectors.toList());
+        System.out.println("__Name______Last_Name________DNI__");
         for (Person p:orderedList) {
-            System.out.println("Name: " + p.getName() +" Last Name: "+ p.getLastName() +" DNI: "+ p.getDni());
+            System.out.println(p.getName() +"    "+p.getLastName()+"    "+p.getDni());
         }
     }
 
     private static void orderPeopleByNameZA(ArrayList<Person> people) {
         List<Person> orderedList = people.stream().sorted(new CustomComparatorByName()).collect(Collectors.toList());
         Collections.reverse(orderedList);
+        System.out.println("__Name______Last_Name________DNI__");
         for (Person p:orderedList) {
-            System.out.println("Name: " + p.getName() +" Last Name: "+ p.getLastName() +" DNI: "+ p.getDni());
+            System.out.println(p.getName() +"    "+p.getLastName()+"    "+p.getDni());
         }
     }
 
     private static void orderPeopleByNameAZ(ArrayList<Person> people) {
         List<Person> orderedList =  people.stream().sorted(new CustomComparatorByName()).collect(Collectors.toList());
+        System.out.println("__Name______Last_Name________DNI__");
         for (Person p:orderedList) {
-            System.out.println("Name: " + p.getName() +" Last Name: "+ p.getLastName() +" DNI: "+ p.getDni());
+            System.out.println(p.getName() +"    "+p.getLastName()+"    "+p.getDni());
         }
     }
 
